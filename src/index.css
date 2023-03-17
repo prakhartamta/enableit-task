@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.th-container {
+  margin: 40px 90px;
+  align-items: center;
+}
+
+.th-column {
+  float: left;
+  width: 22%;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+
+.th-row {
+  margin: 0 -5px;
+  align-items: center;
+}
+
+.th-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.th-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.th-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.th-card-container {
+  padding: 2px 16px;
+}
+
+.th-btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.th-button {
+  background-color: #3296F7;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.th-button:hover,
+.th-button:focus {
+  background-color: #07c;
+}
+
+.th-button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.th-button:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+  .th-column {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .th-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
